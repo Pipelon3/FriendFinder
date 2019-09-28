@@ -1,6 +1,6 @@
-var profiles = [{
+var friends = [{
     "name": "Dwayne Johnson",
-    "photo": "",
+    "picture": "",
     "scores": [
         "5",
         "1",
@@ -15,7 +15,7 @@ var profiles = [{
     ]
 }, {
     "name": "Paul Rudd",
-    "photo": "",
+    "picture": "",
     "scores": [
         "4",
         "2",
@@ -30,7 +30,7 @@ var profiles = [{
     ]
 }, {
     "name": "Chris Hemsworth",
-    "photo": "",
+    "picture": "",
     "scores": [
         "5",
         "2",
@@ -45,7 +45,7 @@ var profiles = [{
     ]
 }, {
     "name": "Michael Cera",
-    "photo": "",
+    "picture": "",
     "scores": [
         "3",
         "3",
@@ -60,7 +60,7 @@ var profiles = [{
     ]
 }, {
     "name": "Danny Devito",
-    "photo": "",
+    "picture": "",
     "scores": [
         "4",
         "3",
@@ -75,7 +75,7 @@ var profiles = [{
     ]
 }, {
     "name": "Hugh Jackman",
-    "photo": "",
+    "picture": "",
     "scores": [
         "4",
         "4",
@@ -89,3 +89,5 @@ var profiles = [{
         "5"
     ]
 }];
+
+module.exports = friends;

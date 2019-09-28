@@ -1,10 +1,11 @@
 var path = require('path');
 
-var friends = require('../data/friend');
+var friends = require('../data/friends');
 
 module.exports = function(app) {
 	
 	app.get('/api/friends', function(req, res) {
+    console.log("hi");
 		res.json(friends);
 	});
 
@@ -12,8 +13,8 @@ module.exports = function(app) {
         console.log(userInput);
 		var userInput = req.body;
 
-		for(var i = 0; i < user.scores.length; i++) {
-            user.scores[i] = parseInt(user.scores[i]);
+		for(var i = 0; i < userInput.scores.length; i++) {
+            userInput.scores[i] = parseInt(userInput.scores[i]);
           }
       
           var friendIndex = 0;
@@ -22,7 +23,7 @@ module.exports = function(app) {
           for(var i = 0; i < friends.length; i++) {
             var totalDifference = 0;
             for(var j = 0; j < friends[i].scores.length; j++) {
-              var difference = Math.abs(user.scores[j] - friends[i].scores[j]);
+              var difference = Math.abs(userInput.scores[j] - friends[i].scores[j]);
               totalDifference += difference;
             }
       
@@ -32,7 +33,7 @@ module.exports = function(app) {
             }
           }
       
-          friends.push(user);
+          friends.push(userInput);
       
           res.json(friends[friendIndex]);
         });
