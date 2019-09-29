@@ -146,7 +146,7 @@
 
 <div><p id="friend" ></p></div>
 
-<div class="modal" tabindex="-1" role="dialog">
+<div class="FriendModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -156,8 +156,9 @@
               </button>
             </div>
             <div class="modal-body">
-              <p>Meet your new best friend.</p>
+              <p>Meet <span id="Friend"></span> your new best friend.</p>
               <p id="friend"></p>
+              <img id="FriendPicture">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -195,9 +196,10 @@
             };
 
 			$.post("http://localhost:8000/api/friends", newUser, function(data) {
-                console.log("hello");
+                console.log(data);
 				$("#Friend").text(data.name);
-				$("#Friendpicture").attr("src", data.picture);
+                $("#FriendPicture").attr("src", data.picture);
+                console.log(data.picture);
 				$("#FriendModal").modal("toggle");
 			});
 		} else {

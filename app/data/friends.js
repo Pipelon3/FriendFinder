@@ -1,6 +1,6 @@
 var friends = [{
     "name": "Dwayne Johnson",
-    "picture": "",
+    "picture": "../pictures/DwayneJohnson.jpg",
     "scores": [
         "5",
         "1",
@@ -15,7 +15,7 @@ var friends = [{
     ]
 }, {
     "name": "Paul Rudd",
-    "picture": "",
+    "picture": "../pictures/DwayneJohnson.jpg",
     "scores": [
         "4",
         "2",
@@ -30,7 +30,7 @@ var friends = [{
     ]
 }, {
     "name": "Chris Hemsworth",
-    "picture": "",
+    "picture": "../pictures/DwayneJohnson.jpg",
     "scores": [
         "5",
         "2",
@@ -45,7 +45,7 @@ var friends = [{
     ]
 }, {
     "name": "Michael Cera",
-    "picture": "",
+    "picture": "../pictures/DwayneJohnson.jpg",
     "scores": [
         "3",
         "3",
@@ -60,7 +60,7 @@ var friends = [{
     ]
 }, {
     "name": "Danny Devito",
-    "picture": "",
+    "picture": "../pictures/DwayneJohnson.jpg",
     "scores": [
         "4",
         "3",
@@ -75,7 +75,7 @@ var friends = [{
     ]
 }, {
     "name": "Hugh Jackman",
-    "picture": "",
+    "picture": "../pictures/DwayneJohnson.jpg",
     "scores": [
         "4",
         "4",
