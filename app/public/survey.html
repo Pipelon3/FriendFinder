@@ -191,7 +191,7 @@
 				]
             };
 
-			$.post("http://localhost:8000/api/friends", newUser, function(data) {
+			$.post("/api/friends", newUser, function(data) {
                 console.log(data);
 				$("#Friend").text(data.name);
                 $("#FriendPicture").attr("src", data.picture);
